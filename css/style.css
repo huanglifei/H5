@@ -105,17 +105,17 @@ img {
 }
 .home-box .btn-box .btn-groub {
   position: absolute;
+  width: 100%;
   text-align: center;
   top: 45%;
-  left: 50%;
-  margin-left: -38%;
 }
 .home-box .btn-box .btn-groub a {
+  width: 37.4%;
   display: inline-block;
   margin: 0 5px;
 }
 .home-box .btn-box .btn-groub a img {
-  height: 36px;
+  width: 100%;
   -webkit-animation: Zoompic 1s infinite;
   animation: Zoompic 1s infinite;
 }
