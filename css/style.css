@@ -738,29 +738,29 @@ img {
   overflow: hidden;
 }
 .page-six .six-a {
-  width: 68.2%;
+  width: 50%;
   position: absolute;
   left: 50%;
-  margin-left: -34.1%;
+  margin-left: -25%;
   top: 4%;
 }
 .page-six .six-b {
-  width: 20.8%;
+  width: 16.8%;
   position: absolute;
   left: 13%;
-  top: 12%;
+  top: 10%;
 }
 .page-six .six-c {
-  width: 28%;
+  width: 24%;
   position: absolute;
   right: 22%;
-  top: 11%;
+  top: 10%;
 }
 .page-six .six-d {
   width: 28%;
   position: absolute;
   left: 6%;
-  top: 22%;
+  top: 18%;
 }
 .page-six .six-e {
   width: 26.1%;
@@ -769,7 +769,7 @@ img {
   top: 18%;
 }
 .page-six .six-f {
-  width: 35.4%;
+  width: 32.4%;
   position: absolute;
   right: 0%;
   top: 24%;
@@ -778,13 +778,13 @@ img {
   width: 24.1%;
   position: absolute;
   left: 5%;
-  top: 29%;
+  top: 25%;
 }
 .page-six .six-h {
   width: 46.6%;
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 18%;
   margin-left: -23.3%;
   z-index: 23;
 }
@@ -796,7 +796,7 @@ img {
   background-position: center 0;
   background-size: 90%;
   position: relative;
-  margin-top: 72%;
+  margin-top: 67%;
   box-sizing: border-box;
   min-height: 261px;
   text-align: center;
