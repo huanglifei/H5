@@ -1,101 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-<style>
-@keyframes warna {
-    0% {
-        transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        transform: scale(0);
-        opacity: 0.1;
-    }
-    50% {
-        transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0.0;
-    }
-}
-@-webkit-keyframes warna {
-    0% {
-        -webkit-transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        -webkit-transform: scale(0);
-        opacity: 0.1;
-    }
-    50% {
-        -webkit-transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        -webkit-transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 0.0;
-    }
-}
-
-.container {
-    position: relative;
-    width: 40px;
-    height: 40px;
-  
-}
-/* 保持大小不变的小圆圈  */
-.dot {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    left: 15px;
-    top: 15px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border: 2px solid red;
-    border-radius: 20px;
-    z-index: 2;
-}
-/* 产生动画（向外扩散变大）的圆圈  */
-.pulse {
-    position: absolute;
-    width: 24px; 
-    height: 24px;
-    left: 2px;
-    top: 2px;
-    border: 6px solid red;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    z-index: 1;
-    opacity: 0;
-    -webkit-animation: warna 3s ease-out;
-    -moz-animation: warna 3s ease-out;
-    animation: warna 3s ease-out;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>港迅H5招聘</title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body style="background: #ff0;">
-	
-<div class="container">
-    <div class="dot"></div>
-    <div class="pulse"></div>
-</div>
+<body>
+    <div class="join-boxaa">
+        <div class="box-insider">
+            <img class="pic_c" src="images/yanhua.png" alt="烟花">
+            <div class="pic_a"><img  src="images/tex_email.png" alt="投递邮箱">  </div>
+            <img class="pic_b" src="images/jiantou.png" alt="箭头">
+            <a class="pic_d" href="emailto:jason@smartinfo.cn"><img src="images/emailadress.png" alt="jason@smartinfo.cn"></a>
+            <img class="pic_e" src="images/emailbox.png" alt="邮筒">
+        </div>
+        <a class="backbox" href="index.html">
+            <img src="images/back.png" alt="返回">
+        </a>
+    </div>
 </body>
 </html>
