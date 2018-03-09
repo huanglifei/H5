@@ -918,40 +918,40 @@ img {
   overflow: hidden;
 }
 .page-eight .eight-a {
-  width: 22%;
+  width: 20%;
   position: absolute;
   left: 10%;
   top: 5%;
 }
 .page-eight .eight-b {
-  width: 32%;
+  width: 26%;
   position: absolute;
   right: 16%;
   top: 3%;
 }
 .page-eight .eight-c {
-  width: 22%;
+  width: 16%;
   position: absolute;
   right: 12%;
-  top: 14%;
+  top: 12%;
 }
 .page-eight .eight-d {
-  width: 35%;
+  width: 33%;
   position: absolute;
   left: 0%;
   top: 19%;
 }
 .page-eight .eight-e {
-  width: 35%;
+  width: 33%;
   position: absolute;
   right: 0%;
-  top: 24%;
+  top: 20%;
 }
 .page-eight .eight-f {
   width: 46%;
   position: absolute;
   left: 50%;
-  top: 17%;
+  top: 15%;
   margin-left: -23%;
   z-index: 23;
 }
@@ -977,7 +977,7 @@ img {
   background-position: center 0;
   background-size: 90%;
   position: relative;
-  margin-top: 67%;
+  margin-top: 63%;
   box-sizing: border-box;
   min-height: 261px;
   text-align: center;
