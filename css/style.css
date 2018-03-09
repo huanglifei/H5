@@ -548,20 +548,20 @@ img {
   overflow: hidden;
 }
 .page-four .four-a {
-  width: 46%;
+  width: 40%;
   position: absolute;
   top: 4%;
   left: 50%;
-  margin-left: -23%;
+  margin-left: -20%;
 }
 .page-four .four-b {
   width: 33%;
   position: absolute;
-  top: 12%;
+  top: 11%;
   left: 4.5%;
 }
 .page-four .four-c {
-  width: 28%;
+  width: 26%;
   position: absolute;
   top: 12%;
   right: 4.5%;
@@ -569,32 +569,32 @@ img {
 .page-four .four-d {
   width: 11%;
   position: absolute;
-  top: 19%;
+  top: 18%;
   left: 15.5%;
 }
 .page-four .four-e {
   width: 34.2%;
   position: absolute;
-  top: 18.5%;
+  top: 17%;
   left: 34%;
 }
 .page-four .four-f {
   width: 21.3%;
   position: absolute;
-  top: 25.5%;
+  top: 23%;
   left: 13%;
 }
 .page-four .four-g {
-  width: 34.6%;
+  width: 33%;
   position: absolute;
-  top: 25.5%;
+  top: 22%;
   right: 0%;
 }
 .page-four .four-h {
   width: 50.5%;
   position: absolute;
   left: 50%;
-  top: 23%;
+  top: 22%;
   margin-left: -25.15%;
   z-index: 23;
 }
@@ -606,7 +606,7 @@ img {
   background-position: center 0;
   background-size: 90%;
   position: relative;
-  margin-top: 70%;
+  margin-top: 68%;
   box-sizing: border-box;
   min-height: 261px;
   text-align: center;
@@ -617,14 +617,14 @@ img {
   margin-top: 24%;
 }
 .page-four .four-i {
-  width: 22.4%;
+  width: 20%;
   position: absolute;
   left: 8%;
   bottom: 3%;
   z-index: 23;
 }
 .page-four .four-j {
-  width: 50.5%;
+  width: 48.5%;
   position: absolute;
   right: 7%;
   bottom: 4%;
