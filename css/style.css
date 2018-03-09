@@ -620,14 +620,15 @@ img {
   width: 20%;
   position: absolute;
   left: 8%;
-  bottom: 3%;
+  bottom: 2%;
   z-index: 23;
 }
 .page-four .four-j {
   width: 48.5%;
   position: absolute;
   right: 7%;
-  bottom: 4%;
+  bottom: 2%;
+  z-index: 23;
 }
 .page-five {
   width: 100%;
