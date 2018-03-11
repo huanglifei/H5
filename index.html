@@ -12,7 +12,34 @@
 </head>
 
 <body>
-    <div class="home-box">
+    <!--pulse wave-->
+    <div class="J-load loaerbox">
+
+        <!--colorful pulse-->
+<div id="colorfulPulse">
+  <span class="item-1"></span>
+  <span class="item-2"></span>
+  <span class="item-3"></span>
+  <span class="item-4"></span>
+  <span class="item-5"></span>
+  <span class="item-6"></span>
+  <span class="item-7"></span>
+</div>
+
+
+        <!-- <div class="lode-inside" id="container">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <h1>Loading...</h1>
+        </div> -->
+
+        <p class="tip-box">广州港讯网络科技有限公司</p>
+    </div>
+    <div class="home-box J-content disnone">
         <div class="one-titbox">
             <img class="home-jionus" src="images/page_one_a.png" alt="">
         </div>
@@ -29,14 +56,31 @@
                 </div>
             </div>
         </div>
-        <div class="btn-box">
-            <div class="btn-groub">
+        <div class="btn-box J-btnbox">
+            <div class="btn-groub J-btn">
                 <a href="about.html"><img src="images/one_btn_a.png" alt="了解港迅"></a>
                 <a href="job.html"><img src="images/one_btn_b.png" alt="招聘职位"></a>
             </div>
         </div>
-       
     </div>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var win_h = $(window).height();
+        // alert(win_h);
+        if (win_h <= 590) {
+            $('.J-btn').css('top', '64%');
+            $('.J-btnbox').css('background-position', '0 60px');
+
+        }
+
+        window.onload = function() {
+            $('.J-load').css('display', 'none');
+            $('.J-content').removeClass('disnone ');
+
+        }
+    });
+    </script>
 </body>
 
 </html>

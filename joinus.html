@@ -12,17 +12,66 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div class="join-boxaa">
-        <div class="box-insider">
-            <img class="pic_c" src="images/yanhua.png" alt="烟花">
-            <div class="pic_a"><img  src="images/tex_email.png" alt="投递邮箱">  </div>
-            <img class="pic_b" src="images/jiantou.png" alt="箭头">
-            <a class="pic_d" href="emailto:jason@smartinfo.cn"><img src="images/emailadress.png" alt="jason@smartinfo.cn"></a>
-            <img class="pic_e" src="images/emailbox.png" alt="邮筒">
+
+      <!--pulse wave-->
+    <div class="J-load loaerbox">
+
+        <!--colorful pulse-->
+<div id="colorfulPulse">
+  <span class="item-1"></span>
+  <span class="item-2"></span>
+  <span class="item-3"></span>
+  <span class="item-4"></span>
+  <span class="item-5"></span>
+  <span class="item-6"></span>
+  <span class="item-7"></span>
+</div>
+
+
+        <!-- <div class="lode-inside" id="container">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <h1>Loading...</h1>
+        </div> -->
+
+        <p class="tip-box">广州港讯网络科技有限公司</p>
+    </div>
+    <div class="join-boxaa J-content disnone">
+        <div class="box-insider J-insidebox">
+            <img class="pic_c J-pic" src="images/yanhua.png" alt="烟花">
+            <div class="pic_a animated fadeInDown"><img  src="images/tex_email.png" alt="投递邮箱">  </div>
+            <img class="pic_b  animated fadeInDown" src="images/jiantou.png" alt="箭头">
+            <a class="pic_d  animated fadeInDown" href="emailto:jason@smartinfo.cn"><img src="images/emailadress.png" alt="jason@smartinfo.cn"></a>
+            <img class="pic_e  animated fadeIn" src="images/emailbox.png" alt="邮筒">
         </div>
-        <a class="backbox" href="index.html">
+        <a class="backbox J-btn" href="index.html">
             <img src="images/back.png" alt="返回">
         </a>
     </div>
+     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+     <script type="text/javascript">
+ window.onload = function() {
+            $('.J-load').css('display', 'none');
+            $('.J-content').removeClass('disnone ');
+
+        }
+
+        $(function(){
+        var win_h = $(window).height();
+        // alert(win_h);
+        if(win_h <= 580){
+            $('.J-btn').css('bottom', '1%');
+            $('.J-insidebox').css({
+                'background-size': '92%',
+                'background-position': 'center 15%'
+            });
+            $('.J-pic').css('width','76%');
+        }
+    });
+     </script>
 </body>
 </html>
