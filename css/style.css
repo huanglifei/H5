@@ -122,6 +122,9 @@ img {
   -webkit-animation: Zoompic 1s infinite;
   animation: Zoompic 1s infinite;
 }
+.linkbtnbox {
+  position: relative;
+}
 .about-box {
   width: 100%;
   max-width: 750px;
@@ -1074,7 +1077,7 @@ img {
 .mouse-box {
   width: 7.6%;
   position: absolute;
-  top: 67.6%;
+  top: 35%;
   right: 39%;
 }
 .mouse-box img {
@@ -1238,6 +1241,17 @@ img {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes lefttorignt {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(0.5%);
+  }
+  100% {
+    transform: translateX(-0.5%);
   }
 }
 @-webkit-keyframes myrotate {
