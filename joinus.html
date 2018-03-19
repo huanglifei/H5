@@ -6,7 +6,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="black" name="apple-mobile-web-app-status-bar-style" />
     <meta content="telephone=no" name="format-detection" />
-    <title>港迅H5招聘</title>
+    <title>广州港讯网络科技有限公司</title>
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -40,17 +40,19 @@
 
         <p class="tip-box">广州港讯网络科技有限公司</p>
     </div>
-    <div class="join-boxaa J-content disnone">
-        <div class="box-insider J-insidebox">
-            <img class="pic_c J-pic" src="images/yanhua.png" alt="烟花">
-            <div class="pic_a animated fadeInDown"><img  src="images/tex_email.png" alt="投递邮箱">  </div>
-            <img class="pic_b  animated fadeInDown" src="images/jiantou.png" alt="箭头">
-            <a class="pic_d  animated fadeInDown" href="emailto:jason@smartinfo.cn"><img src="images/emailadress.png" alt="jason@smartinfo.cn"></a>
-            <img class="pic_e  animated fadeIn" src="images/emailbox.png" alt="邮筒">
+    <div class="join-boxaa  J-content disnone">
+        <div class="box-insider J-insidebox page-night">
+            <div class="pic_a  animated fadeInDown"><img src="images/tex_email.png" alt="投递邮箱"> </div>
+                    <img class="pic_b animated fadeInDown delay6"  src="images/jiantou.png" alt="箭头">
+                    <a class="pic_d animated delay9 fadeInDown" href="emailto:jason@smartinfo.cn"><img src="images/emailadress.png" alt="jason@smartinfo.cn"></a>
+                    <img class="pic_e animated delay12 fadeInDown" src="images/emailbox.png" alt="邮筒">
+                    <img class="pic_c animated delay15 fadeInDown" src="images/start-right.png">
+                    <img class="pic_f animated delay18 fadeInLeft" src="images/cail.png">
+                    <img class="pic_g animated delay21 fadeInRight"  src="images/cair.png">
         </div>
-        <a class="backbox J-btn" href="index.html">
-            <img src="images/back.png" alt="返回">
-        </a>
+        <a class="backbox J-btnback animated fadeInUp delay24"  href="index.html">
+                    <img  src="images/back.png" alt="返回">
+                </a>
     </div>
      <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
      <script type="text/javascript">
@@ -63,13 +65,13 @@
         $(function(){
         var win_h = $(window).height();
         // alert(win_h);
-        if(win_h <= 580){
-            $('.J-btn').css('bottom', '1%');
+        if(win_h <= 578){
+            $('.J-btnback').css('bottom', '1%');
             $('.J-insidebox').css({
-                'background-size': '92%',
-                'background-position': 'center 15%'
+                'background-position': 'center 14px'
             });
-            $('.J-pic').css('width','76%');
+        }else if(win_h > 648){
+             $('.J-btnback').css('bottom', '1%');
         }
     });
      </script>
