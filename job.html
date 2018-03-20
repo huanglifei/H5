@@ -40,7 +40,7 @@
     <!-- Swiper -->
     <div class="swiper-container J-content disnone">
         <div id="audio_btn" class="rotate">
-            <audio loop src="mp3/Audiomachine - Breath And Life1.mp3" id="media" preload=""></audio>
+            <audio loop src="mp3/A_Little_Story.mp3" id="media" preload=""></audio>
         </div>
         <div class="swiper-wrapper">
             <!-- 第1屏-start -->
@@ -284,7 +284,7 @@
                     <div class="txt-box ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">
                         <img class="three-i ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s" src="images/seo_txt.png" alt="SEO优化专员-文本">
                         <div class="linkbtnbox">
-                            <a class="ani J-linkjob" href="joinus.html" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s"><img class="join-btn" src="images/two_h.png" alt="赶快投入我们的怀抱"></a>
+                            <a class="ani J-linkjob" href="joinus.html" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s"><img class="join-btn" src="images/two_h.png" alt="赶快投入我们的怀抱"></a>
                             <div class="mouse-box ani J-mouseain" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s">
                                 <div class="container">
                                     <div class="dot"></div>
@@ -304,18 +304,18 @@
             <!-- 第8屏-stop -->
             <!-- 第9屏-start -->
             <div class="swiper-slide">
-                <div class="page-night  J-insidebox ani" swiper-animate-effect="slideInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                <div class="page-night  J-insidebox ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
                     <div class="pic_a ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"><img src="images/tex_email.png" alt="投递邮箱"> </div>
-                    <img class="pic_b  ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s" src="images/jiantou.png" alt="箭头">
-                    <a class="pic_d  ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s" href="emailto:jason@smartinfo.cn"><img src="images/emailadress.png" alt="jason@smartinfo.cn"></a>
+                    <img class="pic_b  ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s" src="images/jiantou.png" alt="箭头">
+                    <a class="pic_d  ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s" href="emailto:jason@smartinfo.cn"><img src="images/emailadress.png" alt="jason@smartinfo.cn"></a>
                     <img class="pic_e ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s" src="images/emailbox.png" alt="邮筒">
-                    <img class="pic_c ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.1s" src="images/start-right.png">
-                    <img class="pic_f ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.4s" src="images/cail.png">
-                    <img class="pic_g ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.7s" src="images/cair.png">
+                    <img class="pic_c ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s" src="images/start-right.png">
+                    <img class="pic_f ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s" src="images/cail.png">
+                    <img class="pic_g ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s" src="images/cair.png">
                 </div>
-                <a class="backbox J-btnback ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s" href="index.html">
+               <!--  <a class="backbox J-btnback ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s" href="index.html">
                     <img  src="images/back.png" alt="返回">
-                </a>
+                </a> -->
             </div>
             <!-- 第9屏-stop -->
         </div>
@@ -358,12 +358,31 @@
         var flag = true;
 
 
+        //跳转设置
+        var  indexFlag = 0;
+        if(sessionStorage.getItem('indexFlag')){
+            indexFlag = sessionStorage.getItem('indexFlag');
+        }else{
+            indexFlag = 0;
+        }
+
+        $('.J-linkjob').on('click', function(event) {
+            var curindex = $(this).parents('.swiper-slide').index();
+            console.log('curindex:'+ curindex);
+            sessionStorage.setItem('indexFlag', curindex);
+           
+        });
+
+
+
+
 
 
 
         var swiper = new Swiper('.swiper-container', {
             direction: 'vertical',
             mousewheel: true,
+            initialSlide:indexFlag,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -440,21 +459,21 @@
             $('.J-insidebox').css({
                 'background-position': 'center 14px'
             });
-        } else if(win_h > 648){
-            $('.J-pageone').css('margin-top', (mtop_h - 15) + 'px');
+        }else if(win_h > 579 && win_h < 647 ){
+             $('.J-pageone').css('margin-top', (mtop_h - 15) + 'px');
+        }
+
+         else if(win_h >= 648  && win_h < 671 ){
+            $('.J-pageone').css('margin-top', mtop_h  + 'px');
             $('.J-btnback').css('bottom', '1%');
         }
-        else {
-            $('.J-pageone').css('margin-top', mtop_h + 'px');
+        else if(win_h >= 672) {
+            $('.J-pageone').css('margin-top', (mtop_h - 13) + 'px');
         }
 
 
 
-        //跳转设置
-        $('.J-linkjob').on('click', function(event) {
-            
-           
-        });
+        
 
 
 
